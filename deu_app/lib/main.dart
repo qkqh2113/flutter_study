@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:deu_app/MobileIDPage.dart';
+import 'MobileIDPage.dart';
 import 'DPayPage.dart';
 import 'DFoodPage.dart';
 import 'Setting.dart';
 import 'Sit.dart';
 import 'package:deu_app/SchoolInfo.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -27,6 +28,7 @@ class MainPage extends StatelessWidget {
   const MainPage({
     super.key,
   });
+
 
   @override
   Widget build(BuildContext context) {
@@ -215,7 +217,7 @@ class MainPage extends StatelessWidget {
                 case 0:
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MobileIDPage()),
+                    MaterialPageRoute(builder: (context) => const MainPage()),
                   );
                   break;
                 case 1:
@@ -251,3 +253,4 @@ class MainPage extends StatelessWidget {
     );
   }
 }
+
